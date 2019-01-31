@@ -53,7 +53,7 @@ export class Web3ServiceService {
         if(err){
           console.log('err getting accounts')
           observer.error('there was an error getting your accounts');
-          
+
         }else{
           observer.next(accounts);
           observer.complete;
@@ -70,18 +70,26 @@ export class Web3ServiceService {
       instance = contract.at(addr);
       console.log('instance created' ,instance)
       return instance
-  
+
     }
-    createNewLeague(addr, amount, gasToUse):Observable<any>{
+    //create transaction object
+    createTransactionObject(prize){
+      let transObject = {};
+
+    }
+    createNewLeague(prize, addr, gasToUse):Observable<any>{
     return Observable.create(observer=>{
+
       let instance = this.createContractInstance(addr, leagueFactoryContract);
+      let myPrize = this.web3.toWei(prize, 'ether')
       let transactionObject={
         from: this.web3.eth.coinbase,
-        gas:gasToUse
+        gas:gasToUse,
+        value: myPrize
       }
-   
 
-      instance.deployLeague.sendTransaction(amount, transactionObject, (err, result)=>{
+
+      instance.deployLeague.sendTransaction(transactionObject, (err, result)=>{
         if(err){
           console.log('error deploying league');
           observer.error(err)
@@ -101,22 +109,28 @@ export class Web3ServiceService {
         from: this.web3.eth.coinbase,
         gas: gasToUse
       }
-      //use instance to get all leagues
-      console.log('creating instance ', instance)
-    
 
-      instance.GetAllLeagues.sendTransaction(transactionObject, (err, result)=>{
+  instance.GetAllLeagues.call(transactionObject, (err, result)=>{
         if(err){
-          console.log('error getting leagues')
-          observer.error(err)
-        }else{
-          console.log('got all leagues')
-          observer.next(result);
-          observer.complete()
-        }
+              console.log('error getting leagues')
+              observer.error(err)
+            }else{
+              console.log('got all leagues')
+              observer.next(result);
+              observer.complete()
+            }
+
       })
 
     })
+    }
+    // get details of league
+    getLeagueDetails(addr){
+      let instance = this.createContractInstance(addr, LeagueContract)
+      console.log('league ', instance)
+
+
+
     }
 
 }

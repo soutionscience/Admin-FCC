@@ -1,72 +1,64 @@
 <div class="admin">
     <div class="pageloader"><span class="title">Pageloader</span></div>
 
-  <div class="banner">
-      <nav class="navbar is-danger" role="navigation" aria-label="main navigation">
-          <div class="navbar-brand">
-            <a class="navbar-item" href="#">
-              <p>ADMIN</p>
-            </a>
-        
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-            </a>
-          </div>
-        
-          <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-start">
-              <a class="navbar-item">
-                Home
-              </a>
-        
-              <a class="navbar-item">
-                Documentation
-              </a>
-        
-              <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link">
-                  More
-                </a>
-        
-                <div class="navbar-dropdown">
-                  <a class="navbar-item">
-                    About
-                  </a>
-                  <a class="navbar-item">
-                    Jobs
-                  </a>
-                  <a class="navbar-item">
-                    Contact
-                  </a>
-                  <hr class="navbar-divider">
-                  <a class="navbar-item">
-                    Report an issue
-                  </a>
-                </div>
-              </div>
-            </div>
-        
-            <div class="navbar-end">
-              <div class="navbar-item">
-                <div>
-                  <p>
-                    Welcome to admin. You are logged in as {{user}}
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </nav>
-  </div>
+
 <div class="container">
-<button class="button" [ngClass]="{'is-primary': showWarning, 'is-danger': !showWarning}" 
-(click)="newCampaign()"> New Campaign 2</button>
+  <div class="box">
+    <p class="subtitle is-3">Create new Campaign</p>
+    <p class="subtitle is-5">You are connected to: {{factoryAddress}} | factory Address</p>
+      <form [formGroup]="campaignForm" (submit)=" newCampaign()">
+          <div class="field has-addons">
+              <p class="control"  >
+                <input class="input" formControlName="prize" type="text" placeholder="Prize Money">
+              </p>
+              <p class="control">
+                <a class="button is-static">
+                 FFC coins
+                </a>
+              </p>
+            </div>
+              <div class="field is-grouped">
+                <div class="control">
+       <button class="button"
+      [ngClass]="{'is-primary': showWarning, 'is-danger': !showWarning}"
+      [disabled]=" campaignForm.invalid"
+    (click)="newCampaign()"> New Campaign</button>
+    </div>
+    </div>
+
+      </form>
+
+  </div>
+
+  <div class="buttons">
+
 <button class="button" (click)=" connectTRPC()">Connect to Test</button>
 <button class="button" (click)="instance()">create Instance</button>
 <button class="button " (click)="getLeagues()">get leagues</button>
+  </div>
+  <div class="content">
+  <!-- <a class="button is-loading" *ngIf="!leagues">Loading</a> -->
+    <div class="card leagues" *ngIf="leagues">
+    <div class="columns">
+        <div class="column is-half">
+          <div class="card">
+          <div class="leagues buttons" *ngFor='let l of leagues'>
+            <button class="button is-normal" (click)="selectLeague(l)">{{l}}</button>
+          </div>
+          <div class="card">
+            <div class="league-details">
+
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
+
 <!-- <div class="modal"
 [ngClass]="{'is-active': showWarning, 'is-inactive': !showWarning}">
     <div class="modal-background"></div>

@@ -1,0 +1,51 @@
+<div class="compe">
+  <div class="container">
+    <div class="card">
+   <div class="info">
+     <!-- <p>Connected to Factory: </p>
+     <p>Connecte to League:</p> -->
+    </div>
+    <div class="mytitle">
+      <p class="title">Create new Competion</p>
+    </div>
+<div class="compeForm">
+  <form [formGroup]="compeForm" (submit)="createNewCompe()">
+
+    <div class="field is-horizontal">
+        <div class="field-label is-normal">
+            <label class="label">PRIZE</label>
+          </div>
+     <div class="field-body">
+        <div class="field has-addons">
+            <p class="control">
+              <input class="input" type="text" placeholder="Prize" formControlName="prize">
+            </p>
+            <p class="control">
+              <a class="button is-static">
+                Ether
+              </a>
+            </p>
+          </div>
+          <div class="field has-addons">
+              <div class="field-label is-normal">
+                  <label class="label">GAS</label>
+                </div>
+              <p class="control">
+                <input class="input" type="text" placeholder="Gas" formControlName="gas">
+              </p>
+              <p class="control">
+                <a class="button is-static">
+                  Gas
+                </a>
+              </p>
+            </div>
+        </div>
+        <button class="button is-primary" type="submit">Create Competion</button>
+      </div>
+
+
+</form>
+</div>
+    </div>
+  </div>
+</div>
