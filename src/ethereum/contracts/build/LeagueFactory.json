@@ -48,42 +48,51 @@
       "payable": false,
       "stateMutability": "view",
       "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "deleteAllLeagues",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
     }
   ],
-  "bytecode": "0x608060405234801561001057600080fd5b506109a7806100206000396000f300608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806324f688991461005c57806339f82761146100c85780633eb1f5dd146100df575b600080fd5b34801561006857600080fd5b5061007161014c565b6040518080602001828103825283818151815260200191508051906020019060200280838360005b838110156100b4578082015181840152602081019050610099565b505050509050019250505060405180910390f35b3480156100d457600080fd5b506100dd6101da565b005b3480156100eb57600080fd5b5061010a600480360381019080803590602001909291905050506102a3565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b606060008054806020026020016040519081016040528092919081815260200182805480156101d057602002820191906000526020600020905b8160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019060010190808311610186575b5050505050905090565b6000336101e56102e1565b808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050604051809103906000f080158015610237573d6000803e3d6000fd5b50905060008190806001815401808255809150509060018203906000526020600020016000909192909190916101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505050565b6000818154811015156102b257fe5b906000526020600020016000915054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60405161068a806102f2833901905600608060405234801561001057600080fd5b5060405160208061068a83398101806040528101908080519060200190929190505050806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050610607806100836000396000f30060806040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680631095846f14610072578063481c6a751461009f57806371730b5f146100f6578063958bc07d146101435780639f6828d914610163575b600080fd5b34801561007e57600080fd5b5061009d600480360381019080803590602001909291905050506101e9565b005b3480156100ab57600080fd5b506100b46102d8565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561010257600080fd5b5061014160048036038101908080359060200190929190803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506102fd565b005b61016160048036038101908080359060200190929190505050610439565b005b34801561016f57600080fd5b5061018e6004803603810190808035906020019092919050505061052e565b604051808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018415151515815260200183815260200182815260200194505050505060405180910390f35b6001818154811015156101f857fe5b906000526020600020906004020160030160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff1615151561026057600080fd5b6001808281548110151561027057fe5b906000526020600020906004020160030160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561035857600080fd5b60018281548110151561036757fe5b906000526020600020906004020160030160008273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff1615156103ce57600080fd5b8073ffffffffffffffffffffffffffffffffffffffff166108fc6001848154811015156103f757fe5b9060005260206000209060040201600101549081150290604051600060405180830381858888f19350505050158015610434573d6000803e3d6000fd5b505050565b61044161059a565b6080604051908101604052803373ffffffffffffffffffffffffffffffffffffffff1681526020016000151581526020013481526020018381525090506001819080600181540180825580915050906001820390600052602060002090600402016000909192909190915060008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060208201518160000160146101000a81548160ff02191690831515021790555060408201518160010155606082015181600201555050505050565b60018181548110151561053d57fe5b90600052602060002090600402016000915090508060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060000160149054906101000a900460ff16908060010154908060020154905084565b608060405190810160405280600073ffffffffffffffffffffffffffffffffffffffff168152602001600015158152602001600081526020016000815250905600a165627a7a72305820933ce10957e0500276054153f8c8728ac8ee2a9bfcd9cfe847d6d271819f18080029a165627a7a723058206f8fa332cc609ebf014368faa313361fdbd1a07471bc3a683411e240d2f3fa1b0029",
-  "deployedBytecode": "0x608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806324f688991461005c57806339f82761146100c85780633eb1f5dd146100df575b600080fd5b34801561006857600080fd5b5061007161014c565b6040518080602001828103825283818151815260200191508051906020019060200280838360005b838110156100b4578082015181840152602081019050610099565b505050509050019250505060405180910390f35b3480156100d457600080fd5b506100dd6101da565b005b3480156100eb57600080fd5b5061010a600480360381019080803590602001909291905050506102a3565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b606060008054806020026020016040519081016040528092919081815260200182805480156101d057602002820191906000526020600020905b8160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019060010190808311610186575b5050505050905090565b6000336101e56102e1565b808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050604051809103906000f080158015610237573d6000803e3d6000fd5b50905060008190806001815401808255809150509060018203906000526020600020016000909192909190916101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505050565b6000818154811015156102b257fe5b906000526020600020016000915054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60405161068a806102f2833901905600608060405234801561001057600080fd5b5060405160208061068a83398101806040528101908080519060200190929190505050806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050610607806100836000396000f30060806040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680631095846f14610072578063481c6a751461009f57806371730b5f146100f6578063958bc07d146101435780639f6828d914610163575b600080fd5b34801561007e57600080fd5b5061009d600480360381019080803590602001909291905050506101e9565b005b3480156100ab57600080fd5b506100b46102d8565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561010257600080fd5b5061014160048036038101908080359060200190929190803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506102fd565b005b61016160048036038101908080359060200190929190505050610439565b005b34801561016f57600080fd5b5061018e6004803603810190808035906020019092919050505061052e565b604051808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018415151515815260200183815260200182815260200194505050505060405180910390f35b6001818154811015156101f857fe5b906000526020600020906004020160030160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff1615151561026057600080fd5b6001808281548110151561027057fe5b906000526020600020906004020160030160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561035857600080fd5b60018281548110151561036757fe5b906000526020600020906004020160030160008273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff1615156103ce57600080fd5b8073ffffffffffffffffffffffffffffffffffffffff166108fc6001848154811015156103f757fe5b9060005260206000209060040201600101549081150290604051600060405180830381858888f19350505050158015610434573d6000803e3d6000fd5b505050565b61044161059a565b6080604051908101604052803373ffffffffffffffffffffffffffffffffffffffff1681526020016000151581526020013481526020018381525090506001819080600181540180825580915050906001820390600052602060002090600402016000909192909190915060008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060208201518160000160146101000a81548160ff02191690831515021790555060408201518160010155606082015181600201555050505050565b60018181548110151561053d57fe5b90600052602060002090600402016000915090508060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060000160149054906101000a900460ff16908060010154908060020154905084565b608060405190810160405280600073ffffffffffffffffffffffffffffffffffffffff168152602001600015158152602001600081526020016000815250905600a165627a7a72305820933ce10957e0500276054153f8c8728ac8ee2a9bfcd9cfe847d6d271819f18080029a165627a7a723058206f8fa332cc609ebf014368faa313361fdbd1a07471bc3a683411e240d2f3fa1b0029",
-  "sourceMap": "49:344:1:-;;;365:26;8:9:-1;5:2;;;30:1;27;20:12;5:2;365:26:1;49:344;;;;;;",
-  "deployedSourceMap": "49:344:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;259:95;;8:9:-1;5:2;;;30:1;27;20:12;5:2;259:95:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;259:95:1;;;;;;;;;;;;;;;;;115:139;;8:9:-1;5:2;;;30:1;27;20:12;5:2;115:139:1;;;;;;77:32;;8:9:-1;5:2;;;30:1;27;20:12;5:2;77:32:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;259:95;305:9;332:15;325:22;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;259:95;:::o;115:139::-;155:17;186:10;175:22;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;175:22:1;155:42;;207:15;228:9;207:31;;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;207:31:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;115:139;:::o;77:32::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;49:344::-;;;;;;;;;;:::o",
-  "source": "pragma solidity ^0.4.22;\nimport \"./League.sol\";\n\ncontract LeagueFactory {\n   address[] public deployedLeagues;\n\n\n  function deployLeague() public{\n        address newLeague = new League(msg.sender);\n        deployedLeagues.push(newLeague);\n        \n    }\n    function GetAllLeagues() public view returns (address[]){\n        return deployedLeagues;\n    }\n       \n  constructor() public {\n  }\n}\n",
-  "sourcePath": "C:\\Users\\Solution Science\\Google Drive\\work2\\projects\\ethereum-FCC\\contracts\\LeagueFactory.sol",
+  "bytecode": "0x608060405234801561001057600080fd5b50610ac5806100206000396000f3fe608060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806324f688991461006757806339f82761146100d35780633eb1f5dd146100ea57806358cc52cf14610165575b600080fd5b34801561007357600080fd5b5061007c61017c565b6040518080602001828103825283818151815260200191508051906020019060200280838360005b838110156100bf5780820151818401526020810190506100a4565b505050509050019250505060405180910390f35b3480156100df57600080fd5b506100e861020a565b005b3480156100f657600080fd5b506101236004803603602081101561010d57600080fd5b81019080803590602001909291905050506102d3565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561017157600080fd5b5061017a610311565b005b6060600080548060200260200160405190810160405280929190818152602001828054801561020057602002820191906000526020600020905b8160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190600101908083116101b6575b5050505050905090565b600033610215610330565b808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050604051809103906000f080158015610267573d6000803e3d6000fd5b50905060008190806001815401808255809150509060018203906000526020600020016000909192909190916101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505050565b6000818154811015156102e257fe5b906000526020600020016000915054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60008061031e9190610340565b6000808054905014151561032e57fe5b565b6040516107138061038783390190565b508054600082559060005260206000209081019061035e9190610361565b50565b61038391905b8082111561037f576000816000905550600101610367565b5090565b9056fe608060405234801561001057600080fd5b506040516020806107138339810180604052602081101561003057600080fd5b8101908080519060200190929190505050806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050610682806100916000396000f3fe608060405260043610610078576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680631095846f1461007d578063481c6a75146100b857806371730b5f1461010f578063958bc07d1461016a5780639f6828d914610198578063eb1fa9fa1461022c575b600080fd5b34801561008957600080fd5b506100b6600480360360208110156100a057600080fd5b8101908080359060200190929190505050610257565b005b3480156100c457600080fd5b506100cd610346565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561011b57600080fd5b506101686004803603604081101561013257600080fd5b8101908080359060200190929190803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061036b565b005b6101966004803603602081101561018057600080fd5b81019080803590602001909291905050506104a7565b005b3480156101a457600080fd5b506101d1600480360360208110156101bb57600080fd5b810190808035906020019092919050505061059c565b604051808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018415151515815260200183815260200182815260200194505050505060405180910390f35b34801561023857600080fd5b50610241610608565b6040518082815260200191505060405180910390f35b60018181548110151561026657fe5b906000526020600020906004020160030160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff161515156102ce57600080fd5b600180828154811015156102de57fe5b906000526020600020906004020160030160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156103c657600080fd5b6001828154811015156103d557fe5b906000526020600020906004020160030160008273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16151561043c57600080fd5b8073ffffffffffffffffffffffffffffffffffffffff166108fc60018481548110151561046557fe5b9060005260206000209060040201600101549081150290604051600060405180830381858888f193505050501580156104a2573d6000803e3d6000fd5b505050565b6104af610615565b6080604051908101604052803373ffffffffffffffffffffffffffffffffffffffff1681526020016000151581526020013481526020018381525090506001819080600181540180825580915050906001820390600052602060002090600402016000909192909190915060008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060208201518160000160146101000a81548160ff02191690831515021790555060408201518160010155606082015181600201555050505050565b6001818154811015156105ab57fe5b90600052602060002090600402016000915090508060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060000160149054906101000a900460ff16908060010154908060020154905084565b6000600180549050905090565b608060405190810160405280600073ffffffffffffffffffffffffffffffffffffffff1681526020016000151581526020016000815260200160008152509056fea165627a7a723058208abd6fb262f9a28e9b9cff4c0998905c924ec221ecaafc5dc6d3f154190e85890029a165627a7a72305820f9d6fba384a33ee2d6f733ea22282de337e267301e61b88b0aa2dd8868cd1fcd0029",
+  "deployedBytecode": "0x608060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806324f688991461006757806339f82761146100d35780633eb1f5dd146100ea57806358cc52cf14610165575b600080fd5b34801561007357600080fd5b5061007c61017c565b6040518080602001828103825283818151815260200191508051906020019060200280838360005b838110156100bf5780820151818401526020810190506100a4565b505050509050019250505060405180910390f35b3480156100df57600080fd5b506100e861020a565b005b3480156100f657600080fd5b506101236004803603602081101561010d57600080fd5b81019080803590602001909291905050506102d3565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561017157600080fd5b5061017a610311565b005b6060600080548060200260200160405190810160405280929190818152602001828054801561020057602002820191906000526020600020905b8160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190600101908083116101b6575b5050505050905090565b600033610215610330565b808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050604051809103906000f080158015610267573d6000803e3d6000fd5b50905060008190806001815401808255809150509060018203906000526020600020016000909192909190916101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505050565b6000818154811015156102e257fe5b906000526020600020016000915054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60008061031e9190610340565b6000808054905014151561032e57fe5b565b6040516107138061038783390190565b508054600082559060005260206000209081019061035e9190610361565b50565b61038391905b8082111561037f576000816000905550600101610367565b5090565b9056fe608060405234801561001057600080fd5b506040516020806107138339810180604052602081101561003057600080fd5b8101908080519060200190929190505050806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050610682806100916000396000f3fe608060405260043610610078576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680631095846f1461007d578063481c6a75146100b857806371730b5f1461010f578063958bc07d1461016a5780639f6828d914610198578063eb1fa9fa1461022c575b600080fd5b34801561008957600080fd5b506100b6600480360360208110156100a057600080fd5b8101908080359060200190929190505050610257565b005b3480156100c457600080fd5b506100cd610346565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561011b57600080fd5b506101686004803603604081101561013257600080fd5b8101908080359060200190929190803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061036b565b005b6101966004803603602081101561018057600080fd5b81019080803590602001909291905050506104a7565b005b3480156101a457600080fd5b506101d1600480360360208110156101bb57600080fd5b810190808035906020019092919050505061059c565b604051808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018415151515815260200183815260200182815260200194505050505060405180910390f35b34801561023857600080fd5b50610241610608565b6040518082815260200191505060405180910390f35b60018181548110151561026657fe5b906000526020600020906004020160030160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff161515156102ce57600080fd5b600180828154811015156102de57fe5b906000526020600020906004020160030160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156103c657600080fd5b6001828154811015156103d557fe5b906000526020600020906004020160030160008273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16151561043c57600080fd5b8073ffffffffffffffffffffffffffffffffffffffff166108fc60018481548110151561046557fe5b9060005260206000209060040201600101549081150290604051600060405180830381858888f193505050501580156104a2573d6000803e3d6000fd5b505050565b6104af610615565b6080604051908101604052803373ffffffffffffffffffffffffffffffffffffffff1681526020016000151581526020013481526020018381525090506001819080600181540180825580915050906001820390600052602060002090600402016000909192909190915060008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060208201518160000160146101000a81548160ff02191690831515021790555060408201518160010155606082015181600201555050505050565b6001818154811015156105ab57fe5b90600052602060002090600402016000915090508060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060000160149054906101000a900460ff16908060010154908060020154905084565b6000600180549050905090565b608060405190810160405280600073ffffffffffffffffffffffffffffffffffffffff1681526020016000151581526020016000815260200160008152509056fea165627a7a723058208abd6fb262f9a28e9b9cff4c0998905c924ec221ecaafc5dc6d3f154190e85890029a165627a7a72305820f9d6fba384a33ee2d6f733ea22282de337e267301e61b88b0aa2dd8868cd1fcd0029",
+  "sourceMap": "49:489:1:-;;;510:26;8:9:-1;5:2;;;30:1;27;20:12;5:2;510:26:1;49:489;;;;;;",
+  "deployedSourceMap": "49:489:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;270:103;;8:9:-1;5:2;;;30:1;27;20:12;5:2;270:103:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;270:103:1;;;;;;;;;;;;;;;;;117:148;;8:9:-1;5:2;;;30:1;27;20:12;5:2;117:148:1;;;;;;77:34;;8:9:-1;5:2;;;30:1;27;20:12;5:2;77:34:1;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;77:34:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;378:121;;8:9:-1;5:2;;;30:1;27;20:12;5:2;378:121:1;;;;;;270:103;316:17;351:15;344:22;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;270:103;:::o;117:148::-;157:17;196:10;185:22;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;185:22:1;157:51;;218:15;239:9;218:31;;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;218:31:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;117:148;:::o;77:34::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;378:121::-;431:15;;424:22;;;;:::i;:::-;490:1;464:15;:22;;;;:27;457:35;;;;;;378:121::o;49:489::-;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.5.0;\n\nimport \"./League.sol\";\n\ncontract LeagueFactory {\n   address[]  public  deployedLeagues;\n\n\n  function deployLeague() public{\n        address newLeague = address(new League(msg.sender));\n        deployedLeagues.push(newLeague);\n        \n    }\n    function GetAllLeagues() public view returns (address [] memory){\n        return deployedLeagues;\n    }\n    function deleteAllLeagues() public {\n         delete deployedLeagues;\n         assert(deployedLeagues.length == 0);\n    }\n       \n  constructor() public {\n  }\n}\n",
+  "sourcePath": "C:/Users/Solution Science/Google Drive/work2/projects/ethereum-FCC/contracts/LeagueFactory.sol",
   "ast": {
     "absolutePath": "/C/Users/Solution Science/Google Drive/work2/projects/ethereum-FCC/contracts/LeagueFactory.sol",
     "exportedSymbols": {
       "LeagueFactory": [
-        157
+        182
       ]
     },
-    "id": 158,
+    "id": 183,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 121,
+        "id": 130,
         "literals": [
           "solidity",
           "^",
-          "0.4",
-          ".22"
+          "0.5",
+          ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:1"
+        "src": "0:23:1"
       },
       {
         "absolutePath": "/C/Users/Solution Science/Google Drive/work2/projects/ethereum-FCC/contracts/League.sol",
         "file": "./League.sol",
-        "id": 122,
+        "id": 131,
         "nodeType": "ImportDirective",
-        "scope": 158,
-        "sourceUnit": 120,
+        "scope": 183,
+        "sourceUnit": 129,
         "src": "25:22:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -91,25 +100,25 @@
       {
         "baseContracts": [],
         "contractDependencies": [
-          119
+          128
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 157,
+        "id": 182,
         "linearizedBaseContracts": [
-          157
+          182
         ],
         "name": "LeagueFactory",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 125,
+            "id": 134,
             "name": "deployedLeagues",
             "nodeType": "VariableDeclaration",
-            "scope": 157,
-            "src": "77:32:1",
+            "scope": 182,
+            "src": "77:34:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -118,16 +127,17 @@
             },
             "typeName": {
               "baseType": {
-                "id": 123,
+                "id": 132,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
                 "src": "77:7:1",
+                "stateMutability": "nonpayable",
                 "typeDescriptions": {
                   "typeIdentifier": "t_address",
                   "typeString": "address"
                 }
               },
-              "id": 124,
+              "id": 133,
               "length": null,
               "nodeType": "ArrayTypeName",
               "src": "77:9:1",
@@ -141,22 +151,22 @@
           },
           {
             "body": {
-              "id": 142,
+              "id": 153,
               "nodeType": "Block",
-              "src": "145:109:1",
+              "src": "147:118:1",
               "statements": [
                 {
                   "assignments": [
-                    129
+                    138
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 129,
+                      "id": 138,
                       "name": "newLeague",
                       "nodeType": "VariableDeclaration",
-                      "scope": 143,
-                      "src": "155:17:1",
+                      "scope": 153,
+                      "src": "157:17:1",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -164,10 +174,11 @@
                         "typeString": "address"
                       },
                       "typeName": {
-                        "id": 128,
+                        "id": 137,
                         "name": "address",
                         "nodeType": "ElementaryTypeName",
-                        "src": "155:7:1",
+                        "src": "157:7:1",
+                        "stateMutability": "nonpayable",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -177,87 +188,125 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 135,
+                  "id": 146,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 142,
+                              "name": "msg",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 204,
+                              "src": "196:3:1",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_magic_message",
+                                "typeString": "msg"
+                              }
+                            },
+                            "id": 143,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "sender",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "196:10:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address_payable",
+                              "typeString": "address payable"
+                            }
+                          }
+                        ],
                         "expression": {
-                          "argumentTypes": null,
-                          "id": 132,
-                          "name": "msg",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 172,
-                          "src": "186:3:1",
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_address_payable",
+                              "typeString": "address payable"
+                            }
+                          ],
+                          "id": 141,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "NewExpression",
+                          "src": "185:10:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_magic_message",
-                            "typeString": "msg"
+                            "typeIdentifier": "t_function_creation_nonpayable$_t_address_$returns$_t_contract$_League_$128_$",
+                            "typeString": "function (address) returns (contract League)"
+                          },
+                          "typeName": {
+                            "contractScope": null,
+                            "id": 140,
+                            "name": "League",
+                            "nodeType": "UserDefinedTypeName",
+                            "referencedDeclaration": 128,
+                            "src": "189:6:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_League_$128",
+                              "typeString": "contract League"
+                            }
                           }
                         },
-                        "id": 133,
+                        "id": 144,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
+                        "kind": "functionCall",
                         "lValueRequested": false,
-                        "memberName": "sender",
-                        "nodeType": "MemberAccess",
-                        "referencedDeclaration": null,
-                        "src": "186:10:1",
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "185:22:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_address",
-                          "typeString": "address"
+                          "typeIdentifier": "t_contract$_League_$128",
+                          "typeString": "contract League"
                         }
                       }
                     ],
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_address",
-                          "typeString": "address"
-                        }
-                      ],
-                      "id": 131,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": false,
-                      "lValueRequested": false,
-                      "nodeType": "NewExpression",
-                      "src": "175:10:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_function_creation_nonpayable$_t_address_$returns$_t_contract$_League_$119_$",
-                        "typeString": "function (address) returns (contract League)"
-                      },
-                      "typeName": {
-                        "contractScope": null,
-                        "id": 130,
-                        "name": "League",
-                        "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 119,
-                        "src": "179:6:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_League_$119",
+                          "typeIdentifier": "t_contract$_League_$128",
                           "typeString": "contract League"
                         }
-                      }
+                      ],
+                      "id": 139,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "nodeType": "ElementaryTypeNameExpression",
+                      "src": "177:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_address_$",
+                        "typeString": "type(address)"
+                      },
+                      "typeName": "address"
                     },
-                    "id": 134,
+                    "id": 145,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
-                    "kind": "functionCall",
+                    "kind": "typeConversion",
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "175:22:1",
+                    "src": "177:31:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_League_$119",
-                      "typeString": "contract League"
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "155:42:1"
+                  "src": "157:51:1"
                 },
                 {
                   "expression": {
@@ -265,12 +314,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 139,
+                        "id": 150,
                         "name": "newLeague",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 129,
-                        "src": "228:9:1",
+                        "referencedDeclaration": 138,
+                        "src": "239:9:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -286,18 +335,18 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 136,
+                        "id": 147,
                         "name": "deployedLeagues",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 125,
-                        "src": "207:15:1",
+                        "referencedDeclaration": 134,
+                        "src": "218:15:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_address_$dyn_storage",
                           "typeString": "address[] storage ref"
                         }
                       },
-                      "id": 138,
+                      "id": 149,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -305,13 +354,13 @@
                       "memberName": "push",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "207:20:1",
+                      "src": "218:20:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_arraypush_nonpayable$_t_address_$returns$_t_uint256_$",
                         "typeString": "function (address) returns (uint256)"
                       }
                     },
-                    "id": 140,
+                    "id": 151,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -319,119 +368,116 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "207:31:1",
+                    "src": "218:31:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "id": 141,
+                  "id": 152,
                   "nodeType": "ExpressionStatement",
-                  "src": "207:31:1"
+                  "src": "218:31:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 143,
+            "id": 154,
             "implemented": true,
-            "isConstructor": false,
-            "isDeclaredConst": false,
+            "kind": "function",
             "modifiers": [],
             "name": "deployLeague",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 126,
+              "id": 135,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "136:2:1"
+              "src": "138:2:1"
             },
-            "payable": false,
             "returnParameters": {
-              "id": 127,
+              "id": 136,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "145:0:1"
+              "src": "147:0:1"
             },
-            "scope": 157,
-            "src": "115:139:1",
+            "scope": 182,
+            "src": "117:148:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 151,
+              "id": 162,
               "nodeType": "Block",
-              "src": "315:39:1",
+              "src": "334:39:1",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 149,
+                    "id": 160,
                     "name": "deployedLeagues",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 125,
-                    "src": "332:15:1",
+                    "referencedDeclaration": 134,
+                    "src": "351:15:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_address_$dyn_storage",
                       "typeString": "address[] storage ref"
                     }
                   },
-                  "functionReturnParameters": 148,
-                  "id": 150,
+                  "functionReturnParameters": 159,
+                  "id": 161,
                   "nodeType": "Return",
-                  "src": "325:22:1"
+                  "src": "344:22:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 152,
+            "id": 163,
             "implemented": true,
-            "isConstructor": false,
-            "isDeclaredConst": true,
+            "kind": "function",
             "modifiers": [],
             "name": "GetAllLeagues",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 144,
+              "id": 155,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "281:2:1"
+              "src": "292:2:1"
             },
-            "payable": false,
             "returnParameters": {
-              "id": 148,
+              "id": 159,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 147,
+                  "id": 158,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 152,
-                  "src": "305:9:1",
+                  "scope": 163,
+                  "src": "316:17:1",
                   "stateVariable": false,
-                  "storageLocation": "default",
+                  "storageLocation": "memory",
                   "typeDescriptions": {
                     "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
                     "typeString": "address[]"
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 145,
+                      "id": 156,
                       "name": "address",
                       "nodeType": "ElementaryTypeName",
-                      "src": "305:7:1",
+                      "src": "316:7:1",
+                      "stateMutability": "nonpayable",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
                       }
                     },
-                    "id": 146,
+                    "id": 157,
                     "length": null,
                     "nodeType": "ArrayTypeName",
-                    "src": "305:9:1",
+                    "src": "316:10:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
                       "typeString": "address[]"
@@ -441,83 +487,255 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "304:11:1"
+              "src": "315:19:1"
             },
-            "scope": 157,
-            "src": "259:95:1",
+            "scope": 182,
+            "src": "270:103:1",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 155,
+              "id": 176,
               "nodeType": "Block",
-              "src": "386:5:1",
+              "src": "413:86:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 167,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "delete",
+                    "prefix": true,
+                    "src": "424:22:1",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "id": 166,
+                      "name": "deployedLeagues",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 134,
+                      "src": "431:15:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_address_$dyn_storage",
+                        "typeString": "address[] storage ref"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 168,
+                  "nodeType": "ExpressionStatement",
+                  "src": "424:22:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "id": 173,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 170,
+                            "name": "deployedLeagues",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 134,
+                            "src": "464:15:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_array$_t_address_$dyn_storage",
+                              "typeString": "address[] storage ref"
+                            }
+                          },
+                          "id": 171,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "length",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "464:22:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "hexValue": "30",
+                          "id": 172,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "490:1:1",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_0_by_1",
+                            "typeString": "int_const 0"
+                          },
+                          "value": "0"
+                        },
+                        "src": "464:27:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 169,
+                      "name": "assert",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 193,
+                      "src": "457:6:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_assert_pure$_t_bool_$returns$__$",
+                        "typeString": "function (bool) pure"
+                      }
+                    },
+                    "id": 174,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "457:35:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 175,
+                  "nodeType": "ExpressionStatement",
+                  "src": "457:35:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 177,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "deleteAllLeagues",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 164,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "403:2:1"
+            },
+            "returnParameters": {
+              "id": 165,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "413:0:1"
+            },
+            "scope": 182,
+            "src": "378:121:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 180,
+              "nodeType": "Block",
+              "src": "531:5:1",
               "statements": []
             },
             "documentation": null,
-            "id": 156,
+            "id": 181,
             "implemented": true,
-            "isConstructor": true,
-            "isDeclaredConst": false,
+            "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 153,
+              "id": 178,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "376:2:1"
+              "src": "521:2:1"
             },
-            "payable": false,
             "returnParameters": {
-              "id": 154,
+              "id": 179,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "386:0:1"
+              "src": "531:0:1"
             },
-            "scope": 157,
-            "src": "365:26:1",
+            "scope": 182,
+            "src": "510:26:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 158,
-        "src": "49:344:1"
+        "scope": 183,
+        "src": "49:489:1"
       }
     ],
-    "src": "0:394:1"
+    "src": "0:539:1"
   },
   "legacyAST": {
     "absolutePath": "/C/Users/Solution Science/Google Drive/work2/projects/ethereum-FCC/contracts/LeagueFactory.sol",
     "exportedSymbols": {
       "LeagueFactory": [
-        157
+        182
       ]
     },
-    "id": 158,
+    "id": 183,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 121,
+        "id": 130,
         "literals": [
           "solidity",
           "^",
-          "0.4",
-          ".22"
+          "0.5",
+          ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:1"
+        "src": "0:23:1"
       },
       {
         "absolutePath": "/C/Users/Solution Science/Google Drive/work2/projects/ethereum-FCC/contracts/League.sol",
         "file": "./League.sol",
-        "id": 122,
+        "id": 131,
         "nodeType": "ImportDirective",
-        "scope": 158,
-        "sourceUnit": 120,
+        "scope": 183,
+        "sourceUnit": 129,
         "src": "25:22:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -525,25 +743,25 @@
       {
         "baseContracts": [],
         "contractDependencies": [
-          119
+          128
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 157,
+        "id": 182,
         "linearizedBaseContracts": [
-          157
+          182
         ],
         "name": "LeagueFactory",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 125,
+            "id": 134,
             "name": "deployedLeagues",
             "nodeType": "VariableDeclaration",
-            "scope": 157,
-            "src": "77:32:1",
+            "scope": 182,
+            "src": "77:34:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -552,16 +770,17 @@
             },
             "typeName": {
               "baseType": {
-                "id": 123,
+                "id": 132,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
                 "src": "77:7:1",
+                "stateMutability": "nonpayable",
                 "typeDescriptions": {
                   "typeIdentifier": "t_address",
                   "typeString": "address"
                 }
               },
-              "id": 124,
+              "id": 133,
               "length": null,
               "nodeType": "ArrayTypeName",
               "src": "77:9:1",
@@ -575,22 +794,22 @@
           },
           {
             "body": {
-              "id": 142,
+              "id": 153,
               "nodeType": "Block",
-              "src": "145:109:1",
+              "src": "147:118:1",
               "statements": [
                 {
                   "assignments": [
-                    129
+                    138
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 129,
+                      "id": 138,
                       "name": "newLeague",
                       "nodeType": "VariableDeclaration",
-                      "scope": 143,
-                      "src": "155:17:1",
+                      "scope": 153,
+                      "src": "157:17:1",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -598,10 +817,11 @@
                         "typeString": "address"
                       },
                       "typeName": {
-                        "id": 128,
+                        "id": 137,
                         "name": "address",
                         "nodeType": "ElementaryTypeName",
-                        "src": "155:7:1",
+                        "src": "157:7:1",
+                        "stateMutability": "nonpayable",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -611,87 +831,125 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 135,
+                  "id": 146,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 142,
+                              "name": "msg",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 204,
+                              "src": "196:3:1",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_magic_message",
+                                "typeString": "msg"
+                              }
+                            },
+                            "id": 143,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "sender",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "196:10:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address_payable",
+                              "typeString": "address payable"
+                            }
+                          }
+                        ],
                         "expression": {
-                          "argumentTypes": null,
-                          "id": 132,
-                          "name": "msg",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 172,
-                          "src": "186:3:1",
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_address_payable",
+                              "typeString": "address payable"
+                            }
+                          ],
+                          "id": 141,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "NewExpression",
+                          "src": "185:10:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_magic_message",
-                            "typeString": "msg"
+                            "typeIdentifier": "t_function_creation_nonpayable$_t_address_$returns$_t_contract$_League_$128_$",
+                            "typeString": "function (address) returns (contract League)"
+                          },
+                          "typeName": {
+                            "contractScope": null,
+                            "id": 140,
+                            "name": "League",
+                            "nodeType": "UserDefinedTypeName",
+                            "referencedDeclaration": 128,
+                            "src": "189:6:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_League_$128",
+                              "typeString": "contract League"
+                            }
                           }
                         },
-                        "id": 133,
+                        "id": 144,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
+                        "kind": "functionCall",
                         "lValueRequested": false,
-                        "memberName": "sender",
-                        "nodeType": "MemberAccess",
-                        "referencedDeclaration": null,
-                        "src": "186:10:1",
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "185:22:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_address",
-                          "typeString": "address"
+                          "typeIdentifier": "t_contract$_League_$128",
+                          "typeString": "contract League"
                         }
                       }
                     ],
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_address",
-                          "typeString": "address"
-                        }
-                      ],
-                      "id": 131,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": false,
-                      "lValueRequested": false,
-                      "nodeType": "NewExpression",
-                      "src": "175:10:1",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_function_creation_nonpayable$_t_address_$returns$_t_contract$_League_$119_$",
-                        "typeString": "function (address) returns (contract League)"
-                      },
-                      "typeName": {
-                        "contractScope": null,
-                        "id": 130,
-                        "name": "League",
-                        "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 119,
-                        "src": "179:6:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_League_$119",
+                          "typeIdentifier": "t_contract$_League_$128",
                           "typeString": "contract League"
                         }
-                      }
+                      ],
+                      "id": 139,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "nodeType": "ElementaryTypeNameExpression",
+                      "src": "177:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_address_$",
+                        "typeString": "type(address)"
+                      },
+                      "typeName": "address"
                     },
-                    "id": 134,
+                    "id": 145,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
-                    "kind": "functionCall",
+                    "kind": "typeConversion",
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "175:22:1",
+                    "src": "177:31:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_League_$119",
-                      "typeString": "contract League"
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "155:42:1"
+                  "src": "157:51:1"
                 },
                 {
                   "expression": {
@@ -699,12 +957,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 139,
+                        "id": 150,
                         "name": "newLeague",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 129,
-                        "src": "228:9:1",
+                        "referencedDeclaration": 138,
+                        "src": "239:9:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -720,18 +978,18 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 136,
+                        "id": 147,
                         "name": "deployedLeagues",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 125,
-                        "src": "207:15:1",
+                        "referencedDeclaration": 134,
+                        "src": "218:15:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_address_$dyn_storage",
                           "typeString": "address[] storage ref"
                         }
                       },
-                      "id": 138,
+                      "id": 149,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -739,13 +997,13 @@
                       "memberName": "push",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "207:20:1",
+                      "src": "218:20:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_arraypush_nonpayable$_t_address_$returns$_t_uint256_$",
                         "typeString": "function (address) returns (uint256)"
                       }
                     },
-                    "id": 140,
+                    "id": 151,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -753,119 +1011,116 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "207:31:1",
+                    "src": "218:31:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "id": 141,
+                  "id": 152,
                   "nodeType": "ExpressionStatement",
-                  "src": "207:31:1"
+                  "src": "218:31:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 143,
+            "id": 154,
             "implemented": true,
-            "isConstructor": false,
-            "isDeclaredConst": false,
+            "kind": "function",
             "modifiers": [],
             "name": "deployLeague",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 126,
+              "id": 135,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "136:2:1"
+              "src": "138:2:1"
             },
-            "payable": false,
             "returnParameters": {
-              "id": 127,
+              "id": 136,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "145:0:1"
+              "src": "147:0:1"
             },
-            "scope": 157,
-            "src": "115:139:1",
+            "scope": 182,
+            "src": "117:148:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 151,
+              "id": 162,
               "nodeType": "Block",
-              "src": "315:39:1",
+              "src": "334:39:1",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 149,
+                    "id": 160,
                     "name": "deployedLeagues",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 125,
-                    "src": "332:15:1",
+                    "referencedDeclaration": 134,
+                    "src": "351:15:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_address_$dyn_storage",
                       "typeString": "address[] storage ref"
                     }
                   },
-                  "functionReturnParameters": 148,
-                  "id": 150,
+                  "functionReturnParameters": 159,
+                  "id": 161,
                   "nodeType": "Return",
-                  "src": "325:22:1"
+                  "src": "344:22:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 152,
+            "id": 163,
             "implemented": true,
-            "isConstructor": false,
-            "isDeclaredConst": true,
+            "kind": "function",
             "modifiers": [],
             "name": "GetAllLeagues",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 144,
+              "id": 155,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "281:2:1"
+              "src": "292:2:1"
             },
-            "payable": false,
             "returnParameters": {
-              "id": 148,
+              "id": 159,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 147,
+                  "id": 158,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 152,
-                  "src": "305:9:1",
+                  "scope": 163,
+                  "src": "316:17:1",
                   "stateVariable": false,
-                  "storageLocation": "default",
+                  "storageLocation": "memory",
                   "typeDescriptions": {
                     "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
                     "typeString": "address[]"
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 145,
+                      "id": 156,
                       "name": "address",
                       "nodeType": "ElementaryTypeName",
-                      "src": "305:7:1",
+                      "src": "316:7:1",
+                      "stateMutability": "nonpayable",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
                       }
                     },
-                    "id": 146,
+                    "id": 157,
                     "length": null,
                     "nodeType": "ArrayTypeName",
-                    "src": "305:9:1",
+                    "src": "316:10:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
                       "typeString": "address[]"
@@ -875,60 +1130,238 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "304:11:1"
+              "src": "315:19:1"
             },
-            "scope": 157,
-            "src": "259:95:1",
+            "scope": 182,
+            "src": "270:103:1",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 155,
+              "id": 176,
               "nodeType": "Block",
-              "src": "386:5:1",
+              "src": "413:86:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 167,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "delete",
+                    "prefix": true,
+                    "src": "424:22:1",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "id": 166,
+                      "name": "deployedLeagues",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 134,
+                      "src": "431:15:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_address_$dyn_storage",
+                        "typeString": "address[] storage ref"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 168,
+                  "nodeType": "ExpressionStatement",
+                  "src": "424:22:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "id": 173,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 170,
+                            "name": "deployedLeagues",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 134,
+                            "src": "464:15:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_array$_t_address_$dyn_storage",
+                              "typeString": "address[] storage ref"
+                            }
+                          },
+                          "id": 171,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "length",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "464:22:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "hexValue": "30",
+                          "id": 172,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "490:1:1",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_0_by_1",
+                            "typeString": "int_const 0"
+                          },
+                          "value": "0"
+                        },
+                        "src": "464:27:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 169,
+                      "name": "assert",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 193,
+                      "src": "457:6:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_assert_pure$_t_bool_$returns$__$",
+                        "typeString": "function (bool) pure"
+                      }
+                    },
+                    "id": 174,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "457:35:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 175,
+                  "nodeType": "ExpressionStatement",
+                  "src": "457:35:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 177,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "deleteAllLeagues",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 164,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "403:2:1"
+            },
+            "returnParameters": {
+              "id": 165,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "413:0:1"
+            },
+            "scope": 182,
+            "src": "378:121:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 180,
+              "nodeType": "Block",
+              "src": "531:5:1",
               "statements": []
             },
             "documentation": null,
-            "id": 156,
+            "id": 181,
             "implemented": true,
-            "isConstructor": true,
-            "isDeclaredConst": false,
+            "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 153,
+              "id": 178,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "376:2:1"
+              "src": "521:2:1"
             },
-            "payable": false,
             "returnParameters": {
-              "id": 154,
+              "id": 179,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "386:0:1"
+              "src": "531:0:1"
             },
-            "scope": 157,
-            "src": "365:26:1",
+            "scope": 182,
+            "src": "510:26:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 158,
-        "src": "49:344:1"
+        "scope": 183,
+        "src": "49:489:1"
       }
     ],
-    "src": "0:394:1"
+    "src": "0:539:1"
   },
   "compiler": {
     "name": "solc",
-    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "2.0.1",
-  "updatedAt": "2018-11-23T15:56:27.954Z"
+  "schemaVersion": "3.0.1",
+  "updatedAt": "2019-02-16T10:11:48.816Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
 }

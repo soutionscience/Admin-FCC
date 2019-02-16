@@ -175,7 +175,9 @@ export class Web3ServiceService {
         from: this.web3.eth.coinbase,
         gas: gasToUse
       }
-      let numOfLeagues = 3;
+      let numOfLeagues;
+      instance.getCompetitionCount.call(transactionObject, (err, resp)=>{numOfLeagues = resp});
+      console.log('number of leagues ', numOfLeagues)
       let compe =[];
     for (let index = 0; index < numOfLeagues; index++) {
       instance.competitions.call(index, (err, resp)=>{
