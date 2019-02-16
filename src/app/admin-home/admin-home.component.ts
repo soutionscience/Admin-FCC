@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Web3ServiceService } from '../services/web3-service.service';
 import { FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {factoryAddress} from '../shared/baseAddress'
 
 
 @Component({
@@ -12,7 +13,7 @@ export class AdminHomeComponent implements OnInit {
   user: String;
   showWarning: Boolean;
   campaignForm: FormGroup
-  factoryAddress: String
+
   trpcURL: String;
   leagues: String [];
 
@@ -25,7 +26,7 @@ export class AdminHomeComponent implements OnInit {
 
   ngOnInit() {
     this.createForm();
-    this.factoryAddress ='0xde4973d1d1c741916f283cde758cbb4eba6c032e'
+
     this.getAccountsInfo()
 
 
@@ -54,7 +55,7 @@ export class AdminHomeComponent implements OnInit {
   newCampaign(){
     this.showWarning = !this.showWarning
 // this.getAccountsInfo();
-this.webService.createNewLeague(this.campaignForm.value.prize, this.factoryAddress, "1000000")
+this.webService.createNewLeague(this.campaignForm.value.prize, factoryAddress, "1000000")
 .subscribe(resp=>{
   console.log('responce ', resp )
 })
@@ -72,12 +73,12 @@ this.webService.createNewLeague(this.campaignForm.value.prize, this.factoryAddre
   }
   instance(){
     console.log('creating instance')
-    let instance = this.webService.createContractInstance("0xde4973d1d1c741916f283cde758cbb4eba6c032e", "test");
+    let instance = this.webService.createContractInstance(factoryAddress, "test");
     // console.log('what is in instance ', instance)
   }
   getLeagues(){
     console.log('getting leagues');
-    this.webService.getAllLeagues('0xde4973d1d1c741916f283cde758cbb4eba6c032e', '1000000')
+    this.webService.getAllLeagues(factoryAddress, '1000000')
     .subscribe(resp=>{
      this.leagues = resp
      console.log(this.leagues)

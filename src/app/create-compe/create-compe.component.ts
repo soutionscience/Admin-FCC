@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Web3ServiceService } from '../services/web3-service.service';
+import { leagueAdress } from '../shared/baseAddress';
+
 
 @Component({
   selector: 'app-create-compe',
@@ -8,8 +11,9 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 })
 export class CreateCompeComponent implements OnInit {
   compeForm: FormGroup
+  competitions: String [] = [];
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder, private web3Service: Web3ServiceService) {  }
 
   ngOnInit() {
     this.createForm()
@@ -23,7 +27,31 @@ export class CreateCompeComponent implements OnInit {
   }
 
   createNewCompe(){
-    console.log(this.compeForm.value)
+    console.log('creating compe')
+    this.web3Service.createCompetion(leagueAdress, this.compeForm.value.gas, this.compeForm.value.prize)
+    .subscribe(resp=>{
+      console.log(resp)
+    })
+  }
+  // getCompetitons(){
+  //   console.log('competitions ....');
+  //   let numberOfCompe = 3
+  //   for (let index = 0; index < numberOfCompe; index++) {
+  //     this.web3Service.getAllCompetitons(leagueAdress, index, '1000000')
+  //     .subscribe(resp=>{
+  //       this.competitions.push(resp);
+  //       console.log('compe ', this.competitions)
+  //     })
+
+  //   }
+
+  // }
+  getCompetitons(){
+    this.web3Service.getAllCompetitons(leagueAdress, '1000000' )
+    .subscribe(resp=>{
+      this.competitions.push(resp);
+      console.log('compe ', this.competitions)
+    })
   }
 
 }

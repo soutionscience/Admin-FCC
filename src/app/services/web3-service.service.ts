@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import Web3 from 'web3';
-import { Observable } from '../../../node_modules/rxjs';
+import { Observable, observable } from '../../../node_modules/rxjs';
 
 
 let leagueFactoryContract = require('../../ethereum/contracts/build/LeagueFactory.json');
@@ -73,8 +73,18 @@ export class Web3ServiceService {
 
     }
     //create transaction object
-    createTransactionObject(prize){
-      let transObject = {};
+    createTransactionObject(prize, gasToUse){
+      let transObject : any = {};
+      let from = this.web3.eth.coinbase;
+      let myValue= this.web3.toWei(prize, 'ether')
+
+      transObject.from = from;
+      transObject.value = myValue;
+      transObject.gas= gasToUse;
+
+      return transObject
+
+
 
     }
     createNewLeague(prize, addr, gasToUse):Observable<any>{
@@ -131,6 +141,77 @@ export class Web3ServiceService {
 
 
 
+    }
+    createCompetion(addr, gasToUse, Prize):Observable<any>{
+      return Observable.create(observer=>{
+
+        let instance = this.createContractInstance(addr, LeagueContract);
+        let myPrize = this.web3.toWei(Prize, 'ether')
+        console.log('what is in prize?' ,myPrize)
+        let transObject = {
+          from: this.web3.eth.coinbase,
+          value: myPrize,
+          gas: gasToUse
+        }
+        console.log('instance ', instance)
+        instance.createCompetition.sendTransaction(10, transObject, (err, resp)=>{
+         if(err){
+           observer.error(err);
+           console.log('failed to create compe' ,err)
+         }else{
+           observer.next(resp);
+           observer.complete();
+         }
+
+        })
+
+      })
+
+    }
+    getAllCompetitons(addr, gasToUse):Observable<any>{
+    return Observable.create(observer=>{
+      let instance = this.createContractInstance(addr, LeagueContract);
+      let transactionObject ={
+        from: this.web3.eth.coinbase,
+        gas: gasToUse
+      }
+      let numOfLeagues = 3;
+      let compe =[];
+    for (let index = 0; index < numOfLeagues; index++) {
+      instance.competitions.call(index, (err, resp)=>{
+        if(err){
+          console.log('error');
+          observer.error(err)
+        }else{
+     let compeOBject={
+            id: resp[0],
+            complete: resp[1],
+            prize: resp[3],
+            maxPlayers: resp[4]
+
+
+          }
+          compe.push(compeOBject)
+        }
+
+      })
+
+
+    }
+    observer.next(compe);
+    observer.complete();
+      // instance.competitions.call(index, (err, resp)=>{
+      //   if(err) {
+      //     console.log('error?')
+      //     observer.error(err)
+      //   }else{
+      //     observer.next(resp);
+      //     observer.complete();
+      //   }
+      // })
+
+
+    })
     }
 
 }
