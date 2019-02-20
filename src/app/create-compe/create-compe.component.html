@@ -57,6 +57,7 @@
     <div class="card">
       <p class="title">Competions</p>
       <button class="button" (click)="getCompetitons()">getCompetitons</button>
+      <!-- <button (click)="getNumberOfLeagues()">get number</button> -->
       <div class="box" *ngIf='competitions'>
         <table class="table is-fullwidth">
           <thead>
@@ -76,11 +77,11 @@
             </tr>
           </thead>
             <tbody *ngFor = "let c of competitions">
-              <tr *ngFor ="let d of c">
-                <th >id: {{d.id}}</th>
-                <td>Complete: {{d.complete}}</td>
-                <td>Prize: {{d.prize}}</td>
-                <td>Max Players: {{d.maxPlayers}}</td>
+              <tr>
+                <th >id: {{c.id}}</th>
+                <td>Complete: {{c.complete}}</td>
+                <td>Prize: {{c.prize}}</td>
+                <td>Max Players: {{c.maxPlayers}}</td>
 
               </tr>
           </tbody>

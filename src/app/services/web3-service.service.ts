@@ -168,17 +168,16 @@ export class Web3ServiceService {
       })
 
     }
-    getAllCompetitons(addr, gasToUse):Observable<any>{
+    getAllCompetitons(addr, gasToUse, numOfLeagues):Observable<any>{
     return Observable.create(observer=>{
       let instance = this.createContractInstance(addr, LeagueContract);
       let transactionObject ={
         from: this.web3.eth.coinbase,
         gas: gasToUse
       }
-      let numOfLeagues;
-      instance.getCompetitionCount.call(transactionObject, (err, resp)=>{numOfLeagues = resp});
-      console.log('number of leagues ', numOfLeagues)
-      let compe =[];
+
+
+   let compe =[];
     for (let index = 0; index < numOfLeagues; index++) {
       instance.competitions.call(index, (err, resp)=>{
         if(err){
@@ -214,6 +213,23 @@ export class Web3ServiceService {
 
 
     })
+    }
+    getNumberOfLeagues(addr): Observable<any>{
+      return Observable.create(observer=>{
+        let instance = this.createContractInstance(addr, LeagueContract)
+        instance.getCompetitionCount.call((err,resp)=>{
+         if(err){
+        observer.error(err)
+         }
+         resp= resp.toNumber()
+         observer.next(resp)
+         observer.complete();
+       })
+
+      })
+
+
+
     }
 
 }

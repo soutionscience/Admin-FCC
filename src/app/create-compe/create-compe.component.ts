@@ -12,6 +12,7 @@ import { leagueAdress } from '../shared/baseAddress';
 export class CreateCompeComponent implements OnInit {
   compeForm: FormGroup
   competitions: String [] = [];
+  competitionCount: Number;
 
   constructor(private fb: FormBuilder, private web3Service: Web3ServiceService) {  }
 
@@ -47,11 +48,16 @@ export class CreateCompeComponent implements OnInit {
 
   // }
   getCompetitons(){
-    this.web3Service.getAllCompetitons(leagueAdress, '1000000' )
+   this.web3Service.getNumberOfLeagues(leagueAdress)
+   .subscribe(resp=>{
+     this.competitionCount = resp;
+    this.web3Service.getAllCompetitons(leagueAdress, '1000000', this.competitionCount)
     .subscribe(resp=>{
-      this.competitions.push(resp);
-      console.log('compe ', this.competitions)
+      console.log('the fuck is resp ', resp)
+      this.competitions = resp;
+    })
     })
   }
+
 
 }
